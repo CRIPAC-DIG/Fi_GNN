@@ -1,4 +1,4 @@
-# Fi_GNNs
+# Fi_GNNs Datasets
 we give a toy dataset which are randomly sampled from each original dataset you can simply download them [here](http://), and put them into corresponding files.
 
 ## criteos
