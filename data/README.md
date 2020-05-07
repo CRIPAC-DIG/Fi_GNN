@@ -3,12 +3,16 @@ we give a toy dataset which are randomly sampled from each original dataset you 
 
 ## criteos
 `./data/criteo/each_feature_id.json` 
-`./data/criteo/train_00.json` 
+
+`./data/criteo/train_00.json`
+
 `./data/criteo/valid_0.json` 
 
 ## avazu
-`./data/avazu/each_feature_id.json` 
+`./data/avazu/each_feature_id.json`
+
 `./data/avazu/train_0.json` 
+
 `./data/avazu/valid_0.json` 
 
 
