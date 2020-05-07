@@ -1,5 +1,5 @@
 # Fi_GNNs Datasets
-we give a toy dataset which are randomly sampled from each original dataset you can simply download them [here](http://), and put them into corresponding files.
+we give a toy dataset which are randomly sampled from each original dataset you can simply download them [here](https://drive.google.com/drive/folders/19x5XZlQy3LDz1za5Kn51-cBhnmD_GVip?usp=sharing), and put them into corresponding files.
 
 ## criteos
 `./data/criteo/each_feature_id.json` 
