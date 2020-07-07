@@ -7,10 +7,7 @@ The code and data for our paper in CIKM2019: Fi-GNN: Modeling Feature Interactio
 <div align=center>
   <img src="https://github.com/Songweiping/RecSys/blob/master/featureRec/figures/model.png" width = 50% height = 50% />
 </div>
-In AutoInt, we first project all sparse features (both categorical and numerical features) into the 
-low-dimensional space. Next, we feed embeddings of all fields into stacked multiple interacting layers 
-implemented by self-attentive neural network. The output of the final interacting layer is the low-dimensional 
-representation of learnt combinatorial features, which is further used for estimating the CTR via sigmoid function.
+The input sparse multi-field feature vector is first mapped into sparse one-hot embedding vectors and then embedded to dense field embedding vectors via the embedding layer and the multi-head self-attention layer. These field embedding vectors are then represented as a feature graph, where each node corresponds to a feature field and different feature fields can interact through edges. The task of modeling interaction can be thus converted to modeling node interactions on the feature graph. Therefore, the feature graph is feed into our proposed Fi-GNN to model node interactions. An attention scoring layer is applied on the output of Fi-GNN to estimate the click- through rate.
 
 
 Next, we introduce how to run FiGNN on four benchmark data sets.
