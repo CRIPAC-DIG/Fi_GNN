@@ -1,8 +1,8 @@
 '''
-Tensorflow implementation of AutoInt described in:
-AutoInt: Automatic Feature Interaction Learning via Self-Attentive Neural Networks.
-author: Chence Shi
-email: chenceshi@pku.edu.cn
+Tensorflow implementation of Fi-GNN described in:
+Fi-GNN: Modeling Feature Interactions via Graph Neural Networks
+author: Zekun Li
+email: lizekunlee@gmail.com
 '''
 
 import os
@@ -13,14 +13,6 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.metrics import roc_auc_score, log_loss
 from tensorflow.contrib.layers.python.layers import batch_norm as batch_norm
 from tensorflow.contrib.rnn import GRUCell
-
-'''
-The following two functions are adapted from kyubyong park's implementation of transformer
-We slightly modify the code to make it suitable for our work.(add relu, delete key masking and causality mask)
-June 2017 by kyubyong park. 
-kbpark.linguist@gmail.com.
-https://www.github.com/kyubyong/transformer
-'''
 
 
 def message_pass(x, emb_size, hidden_size, field_size, step, graph=None):
@@ -77,6 +69,15 @@ def GNN(feature_embedding_input, blocks, n_steps, emb_size, field_size, graph=No
             states.append(state)
 
     return state, states
+
+
+'''
+The following two functions are adapted from kyubyong park's implementation of transformer
+We slightly modify the code to make it suitable for our work.(add relu, delete key masking and causality mask)
+June 2017 by kyubyong park. 
+kbpark.linguist@gmail.com.
+https://www.github.com/kyubyong/transformer
+'''
 
 def normalize(inputs, epsilon=1e-8):
     '''
