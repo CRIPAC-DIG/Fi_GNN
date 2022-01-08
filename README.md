@@ -1,4 +1,10 @@
+
+# UPDATE 2022.01.08
+The code has been moved to this repo [GraphCTR](https://github.com/Leezekun/GraphCTR), which includes the graph-based CTR prediction models and some other representative baselines.
+
+
 # FiGNN for CTR prediction
+
 The code and data for our paper in CIKM2019: Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction,
 [arxiv](https://arxiv.org/abs/1910.05552).
 
