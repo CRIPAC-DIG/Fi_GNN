@@ -1,6 +1,6 @@
 
 # UPDATE 2022.01.08
-The code has been moved to this repo [GraphCTR](https://github.com/Leezekun/GraphCTR), which includes the graph-based CTR prediction models and some other representative baselines.
+The code has been moved to this repo [GraphCTR](https://github.com/CRIPAC-DIG/GraphCTR), which includes the graph-based CTR prediction models and some other representative baselines.
 
 
 # FiGNN for CTR prediction
