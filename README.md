@@ -5,23 +5,15 @@ The code has been moved to this repo [GraphCTR](https://github.com/CRIPAC-DIG/Gr
 
 # FiGNN for CTR prediction
 
-The code and data for our paper in CIKM2019: Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction,
-[arxiv](https://arxiv.org/abs/1910.05552).
-
-
-
 <div align=center>
   <img src="https://github.com/CRIPAC-DIG/Fi_GNN/blob/74ca80e9ca459c4641d7fe10a70fccb081ef7daa/figures/model.png" width = 50% height = 50% />
 </div>
 The input sparse multi-field feature vector is first mapped into sparse one-hot embedding vectors and then embedded to dense field embedding vectors via the embedding layer and the multi-head self-attention layer. These field embedding vectors are then represented as a feature graph, where each node corresponds to a feature field and different feature fields can interact through edges. The task of modeling interaction can be thus converted to modeling node interactions on the feature graph. Therefore, the feature graph is feed into our proposed Fi-GNN to model node interactions. An attention scoring layer is applied on the output of Fi-GNN to estimate the click- through rate.
 
+The code and data for our paper in CIKM2019: Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction,
+[arxiv](https://arxiv.org/abs/1910.05552).
 
 Next, we introduce how to run FiGNN on four benchmark data sets.
-
-## Requirements: 
-* **Tensorflow 1.5.0**
-* Python 3.6
-* CUDA 9.0+ (For GPU)
 
 ## Usage
 Our code is based on Weiping Song and Chence Shi's [AutoInt](https://github.com/DeepGraphLearning/RecommenderSystems/tree/master/featureRec).
@@ -80,6 +72,11 @@ avg_auc 0.8088305055534442
 avg_log_loss 0.44297631300399626
 ```
 
+## Requirements: 
+- **Tensorflow 1.5.0**
+- Python 3.6
+- CUDA 9.0+ (For GPU)
+
 ## Citation
 If you find FiGNN useful for your research, please consider citing the following paper:
 ```
@@ -92,10 +89,8 @@ If you find FiGNN useful for your research, please consider citing the following
 }
 ```
 
-
 ## Contact information
 You can contact Zekun Li (`lizekunlee@gmail.com`), if there are questions related to the code.
-
 
 ## Acknowledgement
 This implementation is based on Weiping Song and Chence Shi's [AutoInt](https://github.com/DeepGraphLearning/RecommenderSystems/tree/master/featureRec). Thanks for their sharing and contribution.
