@@ -10,8 +10,6 @@ The code has been moved to this repo [GraphCTR](https://github.com/CRIPAC-DIG/Gr
 </div>
 The input sparse multi-field feature vector is first mapped into sparse one-hot embedding vectors and then embedded to dense field embedding vectors via the embedding layer and the multi-head self-attention layer. These field embedding vectors are then represented as a feature graph, where each node corresponds to a feature field and different feature fields can interact through edges. The task of modeling interaction can be thus converted to modeling node interactions on the feature graph. Therefore, the feature graph is feed into our proposed Fi-GNN to model node interactions. An attention scoring layer is applied on the output of Fi-GNN to estimate the click- through rate.
 
-Next, we introduce how to run FiGNN on four benchmark data sets.
-
 
 The code and data for our paper in CIKM2019: [Fi-GNN: Modeling Feature Interactions via Graph Neural Networks for CTR Prediction](https://arxiv.org/abs/1910.05552).
 
